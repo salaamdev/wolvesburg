@@ -1,0 +1,66 @@
+{
+    "manifest_version": 3,
+    "name": "WolvesBurg Test Build v.1.0.2",
+    "version": "1.1.0",
+    "description": "Automate Wolvesville",
+    "author": "redscorpion.",
+    "action": {
+        "default_title": "WolvesBurg",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "32": "images/icons/32.png"
+        }
+    },
+    "icons": {
+        "16": "./images/icons/16.png",
+        "48": "./images/icons/48.png",
+        "128": "./images/icons/128.png",
+        "256": "./images/icons/256.png",
+        "512": "./images/icons/512.png",
+        "1024": "./images/icons/1024.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "./contentscripts/notifications/notification.js",
+                "./contentscripts/onAdPage/roulette.js",
+                "./contentscripts/behindTheScenes/core.js",
+                "./contentscripts/behindTheScenes/automatic.js",
+                "./contentscripts/behindTheScenes/manual.js"
+            ],
+            "css": [
+                "./contentscripts/notifications/notification.css"
+            ],
+            "matches": [
+                "*://www.wolvesville.com/*"
+            ],
+            "all_frames": true
+        },
+        {
+            "js": [
+                "./contentscripts/notifications/notification.js",
+                "./contentscripts/onAdPage/adBoxFrame.js"
+            ],
+            "css": [
+                "./contentscripts/notifications/notification.css"
+            ],
+            "matches": [
+                "*://googleads.g.doubleclick.net/pagead/*"
+            ],
+            "all_frames": true
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "notifications"
+    ],
+    "host_permissions": [
+        "*://www.wolvesville.com/*",
+        "*://googleads.g.doubleclick.net/*"
+    ]
+}

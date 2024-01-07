@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
-  "releaseDate": "01-07-2024",
-  "changeLog": [
-    'Auto Grind Gold in the Background',
-    'Better, more helpful notification',
-    'Less spammy notification',
-    'Update checker added'
-  ],
-  "downloadURL": "https://github.com/redscorpionx/wolvesburg/releases/download/0.0.2/extenstionPopup.png",
+    "version": "1.1.0",
+    "releaseDate": "01-07-2024",
+    "changeLog": [
+        "Auto Grind Gold in the Background",
+        "Better, more helpful notification",
+        "Less spammy notification",
+        "Update checker added"
+    ],
+    "downloadURL": "https://github.com/redscorpionx/wolvesburg/releases/download/0.0.2/extenstionPopup.png"
 }

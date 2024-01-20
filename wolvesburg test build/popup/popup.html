@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOLVESBURG</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+
+<body>
+    <header class="popup-header">
+        <div class="popup-title">
+            <h1>WOLVESBURG</h1>
+        </div>
+        <div id="popup-header-buttons">
+            <button id="adButton">Gold</button>
+            <button id="detButton">Detective</button>
+            <button id="customButton">Autoplay</button>
+        </div>
+    </header>
+
+    <section class="popup-body">
+        <div class="update-available" style="display: none; width: 200px;">
+            <h4>Update Available</h4>
+            <p id="update-text"></p>
+            <button id="updateButton">Update</button>
+        </div>
+        <div class="update-check" style="display: none;">
+            <p>Checking for update...</p>
+        </div>
+        <div class="popup-ad-controls">
+            <h4>Shinny Gold 🪙:</h4>
+            <input type="radio" id="autoOnAdvertPage" name="control" value="autoOnAdvertPage">
+            <label for="autoOnAdvertPage">Automatically on the Advert page</label><br>
+
+            <input type="radio" id="autoBehindScenes" name="control" value="autoBehindScenes">
+            <label for="autoBehindScenes">Automatically behind the scenes</label><br>
+
+            <input type="radio" id="manualBehindScenes" name="control" value="manualBehindScenes">
+            <label for="manualBehindScenes">Manually behind the scenes</label><br>
+
+            <button id="startButton">Start</button>
+            <button id="stopButton">Stop</button>
+        </div>
+
+        <div class="popup-chat-controls" style="display: none;">
+            <h4>Watchful Eyes 👀:</h4>
+            <p>Isolates the text of each player <br>
+                from the rest of the chat. </p>
+            <button id="detective-dialog-add">Show</button>
+            <button id="detective-dialog-remove">Hide</button>
+        </div>
+
+        <div class="popup-autoplay-controls" style="display: none;">
+            <h4>I Just Want Exp 🥹:</h4>
+            <p>Automatically plays the game <br> for you in custom games. <br> </p>
+
+            <input type="radio" id="autoPlaySolo" name="autoPlayControl" value="autoPlaySolo" disabled>
+            <label for="autoPlaySolo">Requires you to own custom games (Recommanded)</label><br>
+
+            <input type="radio" id="autoPlayMulti" name="autoPlayControl" value="autoPlayMulti" disabled>
+            <label for="autoPlayMulti">Does not require you to own custom games (Experiemental)</label><br>
+
+            <button id="autoplayButton">COMING SOON</button>
+        </div>
+    </section>
+
+    <footer class="popup-footer">
+        <h4>SOCIALS</h4>
+        <div class="popup-footer-socials">
+            <img id="youtube-icon" src="../images/popup/socials/youtube.svg" alt="youtube icon">
+            <img id="discord-icon" src="../images/popup/socials/discord.svg" alt="Discord Icon">
+            <img id="paypal-icon" src="../images/popup/socials/paypal.svg" alt="PayPal Icon">
+        </div>
+        <h6>Brought to you by RedScorpion</h6>
+    </footer>
+
+    <script src="./popup.js"></script>
+    <script src="../contentscripts/notifications/notification.js" type="module"></script>
+    <script src="../contentscripts/behindTheScenes/core.js" type="module"></script>
+    <script src="../contentscripts/behindTheScenes/manual.js" type="module"></script>
+
+</body>
+
+</html>

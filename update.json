@@ -1,10 +1,9 @@
 {
-    "version": "1.6.8",
-    "releaseDate": "02-04-2024",
+    "version": "1.2.0.107",
+    "releaseDate": "08-05-2024",
     "changeLog": [
-        "Fixed some bugs occuring during wheel spin",
-        "Added sleeker, less intrusive notifications",
-        "Removed spammy debug messages in the console"
+        "Detective Tab Unlocked",
+        "Lots and lots of fixes and improvements under the hood"
     ],
-    "downloadURL": "https://github.com/redscorpionx/wolvesburg/releases/download/1.6.8/wolvesburg.test.build.zip"
+    "downloadURL": "https://github.com/salaamdev/wolvesburg/releases/download/1.2.0.107/wolvesburg.test.build.zip"
 }

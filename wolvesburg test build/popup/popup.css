@@ -1,0 +1,264 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header styles */
+.popup-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.popup-title h1 {
+    font-size: 2em;
+}
+
+/* Body styles */
+.popup-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.update-available,
+.update-check {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+    transition-property: opacity;
+    opacity: 1;
+}
+
+/* 
+.update-available button */
+
+.popup-ad-controls {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#avatarSlotNumber {
+    width: 100%;
+    height: 30px;
+    margin-top: 3px;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    /* padding: 5px; */
+    /* font-size: 16px; */
+    /* font-weight: bold; */
+    color: #000;
+    background-color: #fff;
+}
+
+#detective-buttons-id {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.09);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#adButton,
+#detButton,
+#customButton {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 5px 5px 0 0;
+    transition: border-bottom-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+
+
+#adButton:hover,
+#detButton:hover,
+#customButton:hover {
+    border-bottom-color: #ffffff;
+}
+
+#popup-header-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.popup-activate {
+    text-align: center;
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    /* background-color: #ff0000; */
+    /* color: #fff; */
+}
+
+.popup-activate-text {
+    text-align: center;
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    background-color: #ff0000;
+    color: #fff;
+    /* font-size: 1.2em; */
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Footer styles */
+.popup-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.popup-footer h4 {
+    font-size: 1.2em;
+}
+
+.popup-footer h6 {
+    margin-top: 10px;
+}
+
+/* Social icons styles */
+.popup-footer-socials img {
+    width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-footer-socials img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animations to specific elements */
+.popup-title h1,
+.popup-ad-controls,
+.popup-chat-controls,
+.popup-autoplay-controls,
+.popup-footer-socials,
+.popup-footer h6 {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .popup-ad-controls {
+        max-width: 100%;
+    }
+
+    #popup-header-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.gold-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gold-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.gold-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.gold-display-box {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.acontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.text-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.text-item span {
+    display: block;
+}
+
+.text-item input[type="text"] {
+    width: 35px;
+    border-radius: 5px;
+}
